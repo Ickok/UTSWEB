@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins|Plus Jakarta Sans">
+    <title>UTS PAB WEB</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style type="text/tailwindcss">
+        @layer utilities {
+                      nav a {
+                        @apply text-nav hover:text-black font-raleway;
+                      }
+            
+                      nav a.active {
+                        @apply text-black;
+                      }
+            
+                      .button-primary {
+                        @apply bg-primary py-[12px] px-[30px] text-white rounded-full hover:bg-secondary;
+                      }
+                      .button-download{
+                        @apply w-[170px] h-[50px] py-[12px] px-[30px] text-cyan-500 rounded-full border-2 border-cyan-500 hover:bg-cyan-500 hover:text-white;
+                      }
+            
+                      .text-gradient {
+                        background: linear-gradient(90.01deg, #E18700 35.24%, #FF32AD 66.21%, #0EC5D7 97.18%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        background-clip: text;
+                        text-fill-color: transparent;
+                      }
+                }
+        </style>
+</head>
+<body>
+    <!-- nav bar -->
+    <nav class="navbar bg-header">
+        <div class="container gap-20 mx-auto flex items-center py-5">
+            <div class="logo flex font-bold items-center">
+                <h1 class="text-amber-500">$</h1>
+                <h1 class="text-cyan-500">eduiten</h1>
+            </div>
+            <div class="flex gap-10 ">
+                <a href="#" class="active">Home</a>
+                <a href="#">About</a>
+                <a href="#">Service</a>
+                <a href="#">Download</a>
+            </div>
+            <div class="ml-auto flex items-center gap-10">
+                <a href="#" class="underline">login</a>
+                <a href="#" class="button-primary flex items-center">Get Started <img class="w-7" src="Arrow.svg" alt="arrow"></a>
+            </div>
+        </div>
+    </nav>
+    <!-- dashbord -->
+    <div class="dashbord bg-header">
+        
+        <div class="container mx-auto relative">
+            <div class="absolute right-0 left-0">
+                <img class="w-[36px]" src="star1.svg" alt="">
+            </div>
+            <p>Dashbord Admin Manager</p>
+            <h1><span class="text-cyan-500">Managing Finances</span> Well will make you Live rich</h1>
+        </div>
+    </div>
+</body>
+</html>

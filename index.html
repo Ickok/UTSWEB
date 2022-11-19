@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTS PAB WEB</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Raleway:ital@0;1&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+                  div a {
+                    @apply text-nav hover:text-black font-raleway;
+                  }
+        
+                  div a.active {
+                    @apply text-black;
+                  }
+                  
+                  .button-primary {
+                    @apply bg-primary py-[12px] px-[30px] text-white rounded-full hover:bg-secondary;
+                  }
+                  .button-download{
+                    @apply w-[170px] h-[50px] py-[12px] px-[30px] text-cyan-500 rounded-full border-2 border-cyan-500 hover:bg-cyan-500 hover:text-white;
+                  }
+            }
+    </style>
+</head>
+<body class="container mx-auto border-2">
+    <header class="bg-header">
+        <section class="px-40 relative">
+            <section id="topbar" class="flex justify-between gap 10 py-5">
+                <div id="left-side" class="flex gap-20 items-center">
+                    <div class="flex items-center text-4xl">
+                        <h1 class="text-amber-300 font-sans font-bold text-5xl">$</h1>
+                        <h1 class="text-cyan-500 font- font-bold">eduiten</h1>
+                    </div>
+                    <ul class="flex gap-10 items-center font-sans text-slate-400">
+                        <li><a href="#" class="active text-black font-bold">Home</a></li> 
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Service</a></li> 
+                        <li><a href="#">Download</a></li>
+                    </ul>
+                </div>
+                <div id="right-side" class="flex gap-10 items-center">
+                    <a href="#" class="underline">login</a>
+                    <a href="#" class="button-primary flex items-center">Get Started <img class="w-7" src="Arrow.svg" alt="arrow"></a>
+                </div>
+            </section>
+            <section id="dashbord" class=" relative py-20">
+                <div class="relative">
+                    <div><img class="absolute w-[36px] top-[0px] left-[550px]" src="star2.svg" alt=""></div>
+                    <div><img class="absolute w-[18px] top-[400px] left-[400px]" src="star1.svg" alt=""></div>
+                    <p class="text-amber-300 font-sans text-[14px]">Dashboard Admin Manager</p>
+                    <h1 class="font-bold font-sans text-[64px] w-[655px] h-[264px]"><span class="text-cyan-500">Managing Finances</span> Well will make you
+                        Live rich</h1>
+                    <p class="text-[14px] text-slate-400 w-[500px] pt-10">Seduten will help you to manage your finances, starting from your monthly expenses and
+                        income, ensuring that your
+                        account and money are safe with our professional system.</p>
+                        <div class="flex gap-10 align-center py-10">
+                            <a href="#" class="button-primary flex items-center">Get Started <img class="w-7" src="Arrow.svg" alt="arrow"></a>
+                            <a href="#" class="button-download flex items-center">Download <img src="Download.svg" alt=""></a>
+                        </div>
+                    
+                </div>
+                <div><img class="absolute w-[20px] top-[35px] right-[0px]" src="star3.svg" alt=""></div>
+            </section>
+            <a href="#" class="absolute right-[250px] top-[120px] bg-black bg-opacity-25 text-white rounded-full p-4">Manage your expenditure 📊</a>
+            
+            <div class="absolute w-[747px] top-[160px] right-0">
+                <img src="gambarr.png" class="" alt="">
+            </div>
+            <div class="absolute w-[1022px] drop-shadow-xl -right-[260px] top-[600px]">
+                <img src="dashbord.png" alt="">
+            </div>
+            <a href="#" class="absolute right-[500px] top-[300px] bg-black bg-opacity-25 text-white rounded-full p-4">Make you rich 💰</a>
+            <a href="#" class="absolute right-[250px] top-[450px] bg-black bg-opacity-25 text-white rounded-full p-4">Awesome experience 💻</a>
+        </section>
+        <div class="flex items-center w-[800px] py-10 px-40 gap-20 bg-amber-300">
+            <div class=" text-white">
+                <h1 class="text-center"><span class="text-5xl">500+</span><br>Partner<br> Word Wide</h1>
+            </div>
+            <div class=" text-white">
+                <h1 class="text-center"><span class="text-5xl">100k+</span><br>user<br> Word Wide</h1>
+            </div>
+            <div class=" text-white">
+                <h1 class="text-center"><span class="text-5xl">3,23M+</span><br>Download<br> Word Wide</h1>
+            </div>
+        </div>
+    </header>
+    <div class="px-40 py-10">
+        <p class="py-10 font-[16px] text-slate-400">Partner</p>
+        <div class="grid grid-cols-3 gap-5 pb-5 w-[600px]">
+            <img class="w-[157px]" src="MS.svg" alt="">
+            <img class="w-[157px]" src="Google.svg" alt="">
+            <img class="w-[157px]" src="tesla.svg" alt="">
+            <img class="w-[157px]" src="payooner.svg" alt="">
+            <img class="w-[157px]" src="Paypal.svg" alt="">
+        </div>
+    </div>
+    <div class="px-40 py-28 relative">
+        <p class="text-amber-300 font-sans text-sm">Dashboard Admin Manager</p>
+        <h1 class="font-semibold font-sans text-[40px] w-[700px]">very professional <span class="text-cyan-500">protection</span></h1>
+        <p class="text-slate-300 font-[14px] w-[600px] py-2">Seduten will help you to manage your finances, starting from your monthly expenses and income, ensuring that your
+        account and money are safe with our professional system.</p>
+        <p class="font-bold font-[14px] normal-case py-2">For protect your date</p>
+        <div class="flex gap-10">
+            <img class="w-[128px]" src="security.svg" alt="">
+            <img class="w-[142px]" src="wordpress.svg" alt="">
+        </div>
+        <img class="absolute top-28 right-40 w-[600px]" src="dashbord2.png" alt="">
+    </div>
+    <div class="grid grid-cols-2 items-center py-20 px-40 bg-header">
+        <div>
+            <img class="w-[500px] ml-20" src="image..png" alt="">
+        </div>
+        <div class="">
+            <p class="text-amber-300 font-sans text-sm">Money Saved</p>
+            <h1 class="font-semibold font-sans text-[40px] w-[600px]">Want to know how much You can<span class="text-cyan-500"> save money </span>on $eduiten ?</h1>
+            <img src="imagerate.png" class="w-[300]" alt="">
+            <p class="text-slate-300 font-[14px] w-[600px] py-2">Lörem ipsum sagt dilig av anasa hemigon, blåbrun. Vanat lobel och bertad. Traktigt suprabon ett jeling.</p>
+        </div>
+    </div>
+    <div class="grid grid-cols-4 gap-5 px-40 py-20">
+        <div class="col-span-2 row-span-2 pt-20">
+            <p class="text-amber-300 font-sans text-sm">Available Features</p>
+            <h1 class="font-semibold font-sans text-[40px] w-[500px]">We come with some<span class="text-cyan-500"> Amazing features </span></h1>
+            <p class="text-slate-300 font-[14px] w-[600px] py-2">Seduten will help you to manage your finances, starting from your monthly expenses and income, ensuring that your account and money are safe with our professional system.</p>
+            <a href="#" class="py-2 button-primary flex items-center w-[220px] ">Browse Features <img class="w-7" src="Arrow.svg" alt="arrow"></a>
+        </div>
+        <div class="bg-slate-100 rounded-lg">
+            <img class="w-[54px] bg-white" src="faster.svg" alt="faster">
+            <h1 class="font-bold text-[24px] px-2 pt-4">Fast Transfer</h1>
+            <p class="text-[14px] p-2 text-slate-300">We work with providers who are very fast in currency transfer</p>
+            <a class="font-bold text-[14px] p-2 text-cyan-500" href="#">Read More</a>
+        </div>
+        <div class="bg-slate-100 rounded-lg">
+            <img class="w-[54px] bg-white" src="emoji.svg" alt="">
+            <h1 class="font-bold text-[24px] px-2 pt-4">User Experience</h1>
+            <p class="text-[14px] p-2 text-slate-300">We work with providers who are very fast in currency transfer</p>
+            <a class="font-bold text-[14px] p-2 text-cyan-500" href="#">Read More</a>
+        </div>
+        <div class="bg-slate-100 rounded-lg">
+            <img class="w-[54px] bg-white" src="money.svg" alt="faster">
+            <h1 class="font-bold text-[24px] px-2 pt-4">Easy Transfer</h1>
+            <p class="text-[14px] p-2 text-slate-300">We work with providers who are very fast in currency transfer</p>
+            <a class="font-bold text-[14px] p-2 text-cyan-500" href="#">Read More</a>
+        </div>
+        <div class="bg-slate-100 rounded-lg">
+            <img class="w-[54px] bg-white" src="tools.svg" alt="">
+            <h1 class="font-bold text-[24px] px-2 pt-4">Maintanance</h1>
+            <p class="text-[14px] p-2 text-slate-300">We work with providers who are very fast in currency transfer</p>
+            <a class="font-bold text-[14px] p-2 text-cyan-500" href="#">Read More</a>
+        </div>
+    </div>
+    <div class="flex items-center bg-header px-40 py-20 bg-auto bg-no-repeat bg-center" style="background-image:url(bg-cyan.svg)">
+        <div class="flex-none w-14 h-14">
+            <a href="#"><img src="arrowleft.svg" alt=""></a>
+        </div>
+        <div class="grow text-center relative">
+            <div><img class="absolute w-[23px] top-[200px] left-[283px]" src="star1.svg" alt=""></div>
+            <div><img class="absolute w-[36px] top-[500px] left-[270px]" src="star3.svg" alt=""></div>
+            <div><img class="absolute w-[18px] top-[550px] right-[200px]" src="star1.svg" alt=""></div>
+            <div><img class="absolute w-[36px] top-[300px] right-[370px]" src="star3.svg" alt=""></div>
+            <p class="text-amber-300 text-center font-sans text-sm">View From Our Dashboard</p>
+            <p class="font-bold font-sans text-cyan-500 text-[64px]">Dashboard Profesional for<br> Your E-Wallet</p>
+            <div class="flex justify-center">
+                <img class="w-[718px]" src="laptop.png" alt="">
+            </div>
+            <p class="text-[14px] p-2 text-slate-300">Lörem ipsum sagt dilig av anasa hemigon, blåbrun. Vanat lobel och bertad. Traktigt<br> suprabon ett jeling.</p>
+            <div class="flex gap-10 py-5 justify-center">
+                <a href="#" class="button-primary flex items-center">Get Started <img class="w-7" src="Arrow.svg" alt="arrow"></a>
+                <a href="#" class="button-download flex items-center">Download <img src="Download.svg" alt=""></a>
+            </div>
+        </div>
+        <div class="flex-none w-14 h-14 ">
+            <a href="#"><img src="arrowright.svg" alt=""></a>
+        </div>
+    </div>
+    <div class="py-20 px-40 ">
+        <div class="">
+            <p class="text-amber-300 font-sans text-sm">Testimonial</p>
+            <p class="text-[40px] font-bold font-sans">Our clients say</p>
+            <p class="text-[14px] p-2 text-slate-300">Lörem ipsum sagt dilig av anasa hemigon, blåbrun. Vanat lobel och bertad. Traktigt <br> suprabon ett jeling.</p>
+        </div>
+        <div class="grid grid-cols-2 gap-5 pt-8">
+            <div class="bg-header ">
+                <img class="w-[157px] py-4 px-8 bg-white" src="logoMS.svg" alt="">
+                <p class="text-[14px] py-2 px-8 text-slate-300">Great experience with Seduten, with easy-to-understand features and guaranteed safety</p>
+                <div class="flex px-8 py-8">
+                    <img class="rounded-full w-[40px]" src="Billgates.png" alt="">
+                    <div class="px-2 ">
+                        <h3 class="text-[14px] font-bold font-sans ">Bill Gates</h3>
+                        <p class="text-[14px] text-slate-300">Owner</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-header ">
+                <img class="w-[157px] py-4 px-8 bg-white" src="logotesla.svg" alt="">
+                <p class="text-[14px] py-2 px-8 text-slate-300">Great Great money storage with very large limits for saving money, safe and very reliable</p>
+                <div class="flex px-8 py-8">
+                    <img class="rounded-full w-[40px] h-[40px]" src="elon.png" alt="">
+                    <div class="px-2 ">
+                        <h3 class="text-[14px] font-bold font-sans ">Elon Reeve Musk FRS</h3>
+                        <p class="text-[14px] text-slate-300">Owner</p>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <div class="px-40 pt-20 bg-buttom grid grid-cols-">
+        <div class="flex items-center text-4xl">
+            <h1 class="text-white font-sans font-bold text-5xl">$</h1>
+            <h1 class="text-white font- font-bold">eduiten</h1>
+        </div>
+        <div class="flex gap-20 pt-10">
+            <div>
+                <p class="text-slate-400 w-[360px] pb-5 font-sans text-[14px] ">Lörem ipsum sagt dilig av anasa hemigon, blåbrun. Vanat lobel och bertad. Traktigt suprabon ett jeling.</p>
+                <div class="py-3 flex gap-5">
+                    <a href="#"><img class="w-[7px]" src="fb.svg" alt=""></a>
+                    <a href="#"><img class="w-[18px]" src="twet.svg" alt=""></a>
+                    <a href="#"><img class="w-[16px]" src="In.svg" alt=""></a>
+                    <a href="#"><img class="w-[16px]" src="ig.svg" alt=""></a>
+                </div>
+                <div class="pt-12">
+                    <a href="#" class="w-[180px] h-[50px] pt-[12px] px-[30px] text-[14px] text-cyan-500 rounded-full border-2 bg-white hover:bg-cyan-500 hover:text-white flex items-center py-5">Download App<img class="w-[20px]" src="Download.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="text-sans text-slate-400 text-[14px] ">
+                <h3 class="text-sans text-white font-bold text-[14px] ">Navigation</h3>
+                <p class="pt-5">Home</p>
+                <p class="pt-3">About Us</p>
+                <p class="pt-3">Shop</p>
+                <p class="pt-3">Our Clients</p>
+                <p class="pt-3">Login</p>
+                <p class="pt-3">Register</p>
+            </div>
+            <div class="text-sans text-slate-400 text-[14px] ">
+                <h3 class="text-sans text-white font-bold text-[14px] ">Featured</h3>
+                <p class="pt-5">Dasbord</p>
+                <p class="pt-3">Message</p>
+                <p class="pt-3">Invesment</p>
+            </div>
+            <div class="text-sans text-slate-400 text-[14px] ">
+                <h3 class="text-sans text-white font-bold text-[14px] ">From Member</h3>
+                <p class="pt-5">privacy Policy</p>
+                <p class="pt-3">Support</p>
+            </div>
+            <div class="text-sans text-slate-400 text-[14px] ">
+                <h3 class="text-sans text-white font-bold text-[14px] ">Contact</h3>
+                <div class="flex pt-5 gap-2">
+                    <img class="w-[20px] h-[14px]" src="Mail.svg" alt="">
+                    <p class="">hallo@seduitenID.com</p>
+                </div>
+                <div class="flex pt-5 gap-2">
+                    <img class="w-[20px] h-[14px]" src="Mail.svg" alt="">
+                    <p class="">(702) 555-0122</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p class="text-sans text-slate-400 text-[14px] py-10 text-right">Mancoding. All Rights Reserved</p>
+        </div>
+    </div>
+</body>
+</html>
